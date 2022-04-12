@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    color: white;
+}
+
+.main-content {
+    display: grid;
+    width: 90%;
+    min-height: 1000px;
+    grid-template-columns: 300px 700px;
+    margin: 20px auto;
+}
+
+.left-section {
+    grid-column: span 1;
+    background-color: rgb(14, 71, 124);
+    padding: 1rem;
+    
+    
+}
+
+.right-section {
+    grid-column: span 1 / span 2;
+    color: black;
+}
+
+.left-content {
+    padding: 1rem;
+}
+
+.profile-image {
+    display: block;
+    margin: auto;
+    height: 200px;
+    border: 5px solid white;
+    width: 60%;
+    border-radius: 30%;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 700px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    letter-spacing: 0.02px;
+}
+
+.designation {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+
+.description {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.social-media-icon ul {
+    display: flex;
+}
+
+.social-media-icon ul li {
+    margin: auto;
+    list-style: none;
+}
+
+.social-media-icon ul li a img {
+    border-radius: 7px;
+    height: 20px;
+}
+
+.social-media-icon ol {
+    margin: 1.5rem;
+}
+
+.social-media-icon ol li {
+    font-size: 0.75rem;
+}
+
+.social-media-icon ol li img {
+    height: 17px;
+}
+
+.social-media-icon li {
+    list-style: none;
+    line-height: 40px;
+    margin-right: 20px;
+}
+
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+    text-decoration: underline;
+    font-weight: 700;
+
+}
+
+.skill-name {
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.progress-bar {
+    border: 1px solid white;
+    height: 4px;
+    background-color: black;
+}
+
+.right-main-content {
+    padding: 2rem 3rem;
+
+}
+
+.right-title {
+
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.right-title h2 {
+    color: rgb(138, 88, 23);
+    text-decoration: underline;
+}
+
+.right-title-para {
+    padding-top: 10px;
+    font-size: 0.6rem;
+    line-height: 1rem;
+}
+
+@media screen and (max-width:673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+        
+        margin: auto;
+    }
+}
